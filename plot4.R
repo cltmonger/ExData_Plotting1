@@ -8,7 +8,7 @@ dane<-subset(dane,select=-2)
 png(filename = "plot4.png",width = 480, height = 480)
 par(mfrow=c(2,2))
 
-plot(dane$Date,dane$Global_active_power,xlab="",ylab="Global Active Power (kilowatts)",type="l")
+plot(dane$Date,dane$Global_active_power,xlab="",ylab="Global Active Power",type="l")
 
 with(dane,plot(Date,Voltage,xlab="datetime",ylab="Voltage",type="l"))
 
